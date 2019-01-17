@@ -1,0 +1,274 @@
+/* linked Google fonts
+font-family: 'Abril Fatface', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Luckiest Guy', cursive;
+*/
+
+/* -------- GENERAL --------   */
+     
+/*Works w main.js to allow 1 page html
+hidden divs are assigned propery display:none
+div.current applies on click of nav link
+ ==> display:block; */
+#pages > div {  
+    display:none;
+}
+#pages > div.current{
+    display:block;
+} 
+
+body {
+    font-family: 'Righteous', cursive;
+    background-repeat: no-repeat; 
+    background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+    margin-right: 0;  
+}
+
+.row{
+   margin-left: 0 !important;
+   margin-right:0 !important; 
+}
+
+/* -------- INDEX --------*/
+.carousel-img{
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(4, 57, 73);
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius: 25px;
+}
+.caption-large{
+    text-align: left;
+    display:inline;
+}
+
+
+.events{
+    color: rgb(4, 57, 73);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: top;
+    text-shadow: 1px 1px 2px chartreuse, 0 0 25px whitesmoke, 0 0 5px darkblue;
+    background-color: transparent;
+    margin-bottom: 4%;
+    padding: 0;
+    padding-left: 5%;
+    border-radius:25px;
+    border-radius: 25px;
+    opacity: 1; 
+}
+
+.small-events {
+    text-align: center;
+    margin-bottom: 22%;
+}
+#nav {
+    background-color: rgb(4, 57, 73); 
+    margin: 0;
+    padding: 0;
+    
+}
+#nav a {
+    font-family: 'Righteous', cursive;
+    color:whitesmoke;
+}
+.logo{
+    margin-left: 10px;
+}
+.logo::after{
+    content: ' Northside Youth Soccer League';
+}
+.main-title{
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    color: rgb(4, 57, 73);;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+.secondary-title{
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    color: rgb(4, 57, 73);;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+/* ABOUT ACCORDEON */
+
+.card{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    background-color: rgb(4, 57, 73);
+    color: whitesmoke; 
+}
+.mission-vision{
+    margin-bottom: 5%;
+}
+.accordeon-toggle {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    background-color: rgb(4, 57, 73);
+    color: whitesmoke;
+}
+
+
+/* INFO SECTION */
+/* BOTONES  GAME INFO*/
+.month-toggle{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    background-color: rgb(4, 57, 73);
+    color: whitesmoke;
+}
+/* TABLA GAME INFO*/
+
+.table-headers{
+    background-color: rgb(4, 57, 73);
+    text-align: center !important;
+}
+.table-div {
+    padding: 0;
+}
+.game-info {
+    
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 0;
+    color: whitesmoke;
+    max-width: 100%;
+}
+td.date, td.loc, td.time, td.team{
+    padding: 0 !important;
+    max-width: 50% !important;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.time, .date {
+    color: rgb(4, 57, 73);;
+    font-weight: 600;
+}
+
+.chat-button{
+    vertical-align: bottom !important;
+}
+
+.jumbotron{
+    background-color: rgb(4, 57, 73);
+    color: whitesmoke;
+    text-align: left;
+}
+
+.extra-info{
+    text-align:left;
+}
+
+/* RULE SECTION */
+
+.fifa-alert{
+    text-align: center;
+}
+
+.rule-dropdown{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    background-color: rgb(4, 57, 73);
+    color: whitesmoke;
+}
+
+#rules > div {  
+    display:none;
+}
+
+#rules > div.current{
+    display:block !important;
+}
+
+.rules {
+    text-align: center;
+}
+
+.remove-list-bullet{
+    list-style-type: none;
+}
+
+/*Media Queries */
+/* Add table cell on landscape */
+.map{
+    display: none;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+@media only screen 
+  /*and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)*/
+  and (orientation: landscape) {
+      .map{
+        display: table-cell;
+    }
+    .tilt-alert{
+        display:none;
+    }
+
+}
+
+/* Message button & Tilt alert */
+@media (min-width:600px)  { 
+    .tilt-alert{
+        display:none;
+    }
+}
+
+
+
+/* CHAT Secton */
+
+.put-bg{
+    background-color: whitesmoke;
+}
+
+#test {
+    display: none;
+}
+
+/* Quickstart's predetermined classes override */
+.mdl-card__title-text{
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 5%;
+}
+
+.username{
+    text-align: left;
+    background-color: rgb(4, 57, 73);
+    color: rgb(4, 57, 73); 
+    font-weight: 600;
+    margin-top: 0;
+    padding-left: 2%;
+   
+}
+
+.text{
+    text-align: left;
+    border: 1px rgb(4, 57, 73);
+    border-radius: 5px;
+    padding-left: 4%
+
+}
+
+.star, .add-comment{
+    display: none !important;
+}
+
+.hide{display:none;}
